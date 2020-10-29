@@ -1,5 +1,5 @@
-const footerColumns = [
-  [
+const footerColumns = {
+  en: [
     {
       name: 'Product',
       items: [
@@ -33,9 +33,6 @@ const footerColumns = [
         },
       ],
     },
-  ],
-
-  [
     {
       name: 'Blog',
       items: [
@@ -57,9 +54,6 @@ const footerColumns = [
         },
       ],
     },
-  ],
-
-  [
     {
       name: 'Resources',
       items: [
@@ -88,9 +82,6 @@ const footerColumns = [
         },
       ],
     },
-  ],
-
-  [
     {
       name: 'Company',
       items: [
@@ -117,10 +108,8 @@ const footerColumns = [
       ],
     },
   ],
-]
 
-const footerColumnsZh = [
-  [
+  zh: [
     {
       name: '产品',
       items: [
@@ -136,9 +125,6 @@ const footerColumnsZh = [
         },
       ],
     },
-  ],
-
-  [
     {
       name: '资源',
       items: [
@@ -178,9 +164,6 @@ const footerColumnsZh = [
         },
       ],
     },
-  ],
-
-  [
     {
       name: '学习',
       items: [
@@ -210,9 +193,6 @@ const footerColumnsZh = [
         },
       ],
     },
-  ],
-
-  [
     {
       name: '支持',
       items: [
@@ -232,8 +212,6 @@ const footerColumnsZh = [
         },
       ],
     },
-  ],
-  [
     {
       name: '公司',
       items: [
@@ -257,13 +235,6 @@ const footerColumnsZh = [
       ],
     },
   ],
-]
-
-const footerColumnsMap = {
-  zh: footerColumnsZh,
-  en: footerColumns,
 }
 
-export { footerColumns, footerColumnsZh }
-
-export default footerColumnsMap
+export { footerColumns }

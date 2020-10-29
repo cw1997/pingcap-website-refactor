@@ -1,2 +1,58 @@
+@import "src/styles/_definition"
+
+$footer-width: $page-width
+$footer-padding-top: 80px
+$footer-padding-bottom: 0
+$footer-background-color: #F7F8F9
+
+$link-column-width: 200px
+
+$link-title-font-size: 18px
+$link-title-font-weight: bold
+$link-title-color: #30323E
+
+$link-item-font-size: 16px
+$link-item-font-weight: 400
+$link-item-color: #6E77A3
+
+$link-item-margin-top: 20px
+
+$copyright-color: #6C7496
+$footer-padding: 50px
 
 .Footer
+  background-color: $footer-background-color
+  padding:
+    top: $footer-padding-top
+    bottom: $footer-padding-bottom
+  display: flex
+  justify-content: center
+  align-items: center
+  &-container
+    width: $footer-width
+    &-main
+      display: flex
+      justify-content: space-between
+      &-left
+        display: flex
+        &-column
+          width: $link-column-width
+          &-title
+            color: $link-title-color
+            font:
+              size: $link-title-font-size
+              weight: $link-title-font-weight
+          &-item
+            margin:
+              top: $link-item-margin-top
+            a
+              font:
+                size: $link-item-font-size
+                weight: $link-item-font-weight
+              color: $link-item-color
+    &-copyright
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: $footer-padding 0
+      color: $copyright-color
