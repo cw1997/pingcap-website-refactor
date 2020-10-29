@@ -5,7 +5,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import { navBarData, promotionText } from '../data/navbar'
 import './NavBar.sass'
 
-export default function() {
+export default function(props) {
   const imageData = useStaticQuery(
     graphql`
       query {
