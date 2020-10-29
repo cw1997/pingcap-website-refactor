@@ -1,0 +1,82 @@
+@import "src/styles/_definition"
+
+$nav-bar-width: 1200px
+$nav-bar-height: 84px
+
+$logo-width: 120px
+$logo-margin: 40px
+// below style value is 40px in design
+$link-item-margin: 20px
+$link-item-font-size: 16px
+$link-item-color: #6E77A3
+$link-item-active-color: #2E2FFF
+$link-item-active-underline-color: #2E2FFF
+$link-item-active-underline-margin: 6px
+$link-item-active-underline-border-width: 2px
+
+$button-color-background: #2E2FFF
+$button-border-color: #2C2DF5
+// below style value is 120px in design
+$button-width: 150px
+$button-height: 40px
+$button-margin: 24px
+$button-font-size: 16px
+
+.NavBar
+  display: flex
+  justify-content: center
+  align-items: center
+  height: $nav-bar-height
+  &-container
+    width: $nav-bar-width
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-left
+      display: flex
+      align-items: center
+      &-logo
+        @include label
+        width: $logo-width
+        margin:
+          right: $logo-margin
+      &-link
+        @include label
+        display: flex
+        align-items: center
+        list-style: none
+        color: $link-item-color
+        &-item
+          padding: $link-item-active-underline-margin $link-item-margin
+          a
+            text-decoration: none
+            color: $link-item-color
+            &:visited
+              color: $link-item-color
+          &-active
+            color: $link-item-active-color
+            border:
+              bottom: $link-item-active-underline-border-width solid $link-item-active-underline-color
+    &-right
+      & > a
+        @include label
+        @include clickable
+        display: inline-block
+        width: $button-width
+        height: $button-height
+        text-align: center
+        line-height: $button-height
+        font:
+          size: $button-font-size
+      &-button
+        &-contact
+          color: $button-border-color
+          background-color: #fff
+          border: 1px solid $button-border-color
+          margin:
+            right: $button-margin
+          border-radius: $button-height
+        &-get
+          color: #fff
+          background-color: $button-color-background
+          border-radius: $button-height
