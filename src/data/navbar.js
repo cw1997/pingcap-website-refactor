@@ -30,6 +30,10 @@ const navBarData = {
         name: 'Community',
         href: '/community',
       },
+      {
+        name: 'About',
+        href: '/about',
+      },
     ],
     zh: [
       {
